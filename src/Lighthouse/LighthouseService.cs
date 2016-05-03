@@ -38,7 +38,7 @@ namespace Lighthouse
 
         public bool Stop(HostControl hostControl)
         {
-            _lighthouseSystem.Shutdown();
+            _lighthouseSystem.Terminate(); // .Wait() ???
             return true;
         }
     }
